@@ -1,0 +1,62 @@
+.home-main {
+  width: 80%;
+}
+
+.dashboard-container {
+  margin: 2rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.dashboard-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.3rem;
+  box-shadow: 0rem 0rem 0.06rem 0.06rem rgb(197, 197, 197);
+  width: 20%;
+  margin: 1rem 2rem;
+  transition: 0.8s ease-in-out;
+  background: transparent;
+  cursor: pointer;
+}
+
+.dashboard-item:hover {
+  background: crimson;
+}
+
+.dashboard-item:hover .dashboard-item_left p {
+  color: white;
+}
+
+.dashboard-item:hover .dashboard-item_left span {
+  color: white;
+}
+
+.dashboard-item_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dashboard-item_left p {
+  margin: 0.5rem 0rem;
+  transition: 0.8s ease-in-out;
+}
+
+.dashboard-item_left span {
+  margin: 0.5rem 0rem;
+  transition: 0.8s ease-in-out;
+}
+
+.dashboard-item_img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 5rem;
+  /* box-shadow: 0rem 0rem 0.06rem 0.06rem rgb(197, 197, 197); */
+}
+
+.dashboard-item_img img {
+  height: 5rem;
+  width: 5rem;
+}

@@ -1,0 +1,153 @@
+.home-tables {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-box {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem;
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    /* height: 3rem; */
+    margin: 0.5rem 0rem;
+    box-shadow: 0rem 0rem 0.06rem 0.06rem green;
+    overflow: hidden;
+}
+
+.table-head {
+    background-color: green;
+    padding: 0.5rem 0.8rem;
+}
+
+.table-head .table-cell span {
+    color: white;
+}
+
+.table-cell {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-right: 0.06rem solid green;
+    padding: 0.5rem 0.8rem;
+}
+
+.last-cell {
+    border-right: none;
+}
+
+.table-head span {
+    width: 6rem;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.title-cell span {
+    width: 30rem;
+    text-align: left;
+}
+
+button {
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+}
+
+button.update {
+    background: rgb(75, 132, 238);
+    color: rgb(255, 255, 255);
+    border: 0.1rem solid transparent;
+}
+
+button.update:hover {
+    border: 0.1rem solid blue;
+    background: blue;
+}
+
+button.delete {
+    background: rgb(247, 94, 94);
+    color: white;
+    border: 0.1rem solid transparent;
+}
+
+button.delete:hover {
+    border: 0.1rem solid red;
+    background: red;
+}
+
+a.download {
+    background: rgb(122, 241, 122);
+    color: white;
+    border: 0.1rem solid transparent;
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+}
+
+a.download:hover {
+    border: 0.1rem solid green;
+    background: green;
+}
+
+.table-actions {
+    display: flex;
+    margin: 0.5rem 0rem;
+}
+
+.table-actions .table-cell {
+    width: fit-content;
+    padding: 0rem;
+    margin: 0rem;
+    border: none;
+}
+
+a.offer-contract {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(122, 241, 122);
+    padding: 0.2rem;
+}
+
+a.offer-contract:hover {
+    background: rgb(0, 255, 0);
+}
+
+p.contract-pending {
+    display: flex;
+    align-items: center;
+    background: rgb(75, 132, 238);
+    color: #fff;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+p.contract-pending:hover {
+    background: rgb(0, 89, 255);
+}
+
+a.fund-btn {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(122, 241, 122);
+    padding: 0.5rem 0.8rem;
+}
+
+a.fund-btn:hover {
+    background: rgb(0, 255, 0);
+}
+
+p#declined {
+    color: crimson;
+    font-size: 1.3rem;
+}
+
+p.approve {
+    color: green;
+    font-size: 1.3rem;
+    text-align: center;
+}

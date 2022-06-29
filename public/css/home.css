@@ -1,0 +1,291 @@
+.home-main {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2#home-title {
+    color: rgb(66, 66, 66);
+}
+
+.home-container {
+    margin: 1rem 0rem;
+}
+
+.home-container-items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 1rem;
+    box-shadow: 0rem 0rem 0.06rem 0.06rem rgb(226, 226, 226);
+    width: 45rem;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.home-container-items::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 7rem;
+    height: 7rem;
+    border-bottom-right-radius: 7rem;
+    background: crimson;
+    z-index: -1;
+}
+
+.home-pic-and-title {
+    display: flex;
+    align-items: center;
+}
+
+.pic-container {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 8rem;
+    box-shadow: 0rem 0rem 0.06rem 0.06rem rgb(66, 66, 66);
+}
+
+.pic-container img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 8rem;
+    z-index: 1;
+}
+
+.home-container-item {
+    margin-top: 1.5rem;
+}
+
+.home-pic-and-title h2 a {
+    color: crimson;
+    width: 25rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home-pic-and-title h2 a:hover {
+    text-decoration: underline;
+}
+
+.item-text {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0.5rem 0rem;
+}
+strong {
+    margin-right: 2rem;
+}
+
+p {
+    font-weight: 300;
+}
+
+p.active {
+    color: blue;
+    font-weight: bolder;
+}
+
+span#price {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 10rem;
+    color: green;
+    font-weight: bolder;
+}
+
+span#date-posted {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    color: green;
+    width: 8rem;
+}
+
+/* Contract offers */
+
+.contract-container {
+    margin: 2rem 0rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 1rem 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.contract-reciever {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.contract-reciever .reciever-img img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 8rem;
+}
+
+.reciever-img {
+    height: 8rem;
+    width: 8rem;
+    box-shadow: 0rem 0rem 0.06rem 0.06rem rgb(226, 226, 226);
+    border-radius: 8rem;
+    margin-right: 1rem;
+}
+
+.contract-items {
+    margin: 1rem 0rem;
+}
+
+.contract-items form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    color: white;
+    border: 0.1rem solid transparent;
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem 0rem;
+    width: fit-content;
+}
+
+button.upload {
+    background: rgb(75, 132, 238);
+    color: rgb(255, 255, 255);
+    border: 0.1rem solid transparent;
+}
+
+button.upload:hover {
+    border: 0.1rem solid blue;
+    background: blue;
+}
+
+button.submit {
+    background: rgb(122, 241, 122);
+    color: white;
+    border: 0.1rem solid transparent;
+}
+
+button.submit:hover {
+    border: 0.1rem solid green;
+    background: green;
+}
+
+/* Apply button */
+
+.apply {
+    margin: 1rem 0rem;
+    z-index: 10;
+}
+
+button.apply-btn {
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    border: 0.06rem solid green;
+    position: relative;
+    transition: 0.8s ease-in-out;
+    color: rgb(66, 66, 66);
+    z-index: 9;
+}
+
+.to-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: 0.8s ease-in-out;
+    z-index: -1;
+    background-color: green;
+}
+
+.apply button.apply-btn:hover {
+    color: white;
+}
+
+.apply button.apply-btn:hover .to-bottom {
+    height: 100%;
+}
+
+.apply .contact-btn {
+    color: rgb(66, 66, 66);
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    border: 0.06rem solid green;
+    position: relative;
+    transition: 0.8s ease-in-out;
+    z-index: 9;
+}
+
+.apply .contact-btn:hover {
+    color: white;
+}
+
+.apply .contact-btn:hover .to-bottom {
+    height: 100%;
+}
+
+a.username {
+    text-decoration: none;
+    color: crimson;
+    transition: 0.8s ease-in-out;
+}
+
+a.username:hover {
+    text-decoration: underline;
+}
+
+.recieved {
+    margin: 1rem 0rem;
+}
+
+.recieved p {
+    color: rgb(122, 241, 122);
+}
+
+.recieved a {
+    color: rgb(122, 241, 122);
+}
+
+p.applied {
+    margin: 1rem 0rem;
+    color: rgb(75, 132, 238);
+}
+
+/* Ban gig */
+
+.bg-ban {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+.bg-ban h4 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(50, -50);
+    color: crimson;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    transform: rotate(45deg);
+}

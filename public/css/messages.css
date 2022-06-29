@@ -1,0 +1,125 @@
+.home-main {
+    top: 10%;
+}
+.messages-main_container {
+    position: relative;
+    left: 50%;
+    margin: 1rem 0rem;
+}
+
+.user-message_details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.4rem;
+}
+
+.user-message_details img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5rem;
+}
+
+.user-message_details p {
+    color: crimson;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.message-container {
+    margin: 1rem 0rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 20rem;
+    overflow-y: scroll;
+}
+
+.message-container::-webkit-scrollbar {
+    width: 1vw;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+    background: rgb(212, 243, 255);
+    border-radius: 1rem;
+}
+
+.message-container::-webkit-scrollbar-thumb:hover {
+    background: skyblue;
+}
+
+.message-container::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+.message-container::-webkit-scrollbar-track:hover {
+    background: rgb(233, 229, 229);
+}
+
+.message-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.message-receiver {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(134, 134, 250);
+    padding: 1rem;
+    max-width: 40%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    height: fit-content;
+    border-radius: 1rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    word-wrap: break-word;
+}
+
+.message-receiver p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0rem;
+}
+
+small {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+}
+
+.message-sender {
+    display: flex;
+    flex-direction: column;
+    background: rgb(142, 253, 142);
+    padding: 1rem;
+    max-width: 25%;
+    height: fit-content;
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    position: relative;
+    top: 0;
+    left: 75%;
+    word-wrap: break-word;
+}
+
+.message-sender p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0rem;
+}
+
+input[name="body"] {
+    width: 80%;
+    padding: 0.5rem;
+    border: 0.1rem solid skyblue;
+    outline: none;
+}
+
+input[name="body"]:focus {
+    border: 0.1rem solid blue;
+}

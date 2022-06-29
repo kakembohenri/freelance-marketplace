@@ -1,0 +1,239 @@
+.profile-main {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-section1 {
+    display: flex;
+    justify-content: center;
+}
+
+.home-pic {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 12rem;
+}
+
+.home-pic img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.personal-section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 2rem;
+}
+
+.personal-section2 h2 {
+    color: crimson;
+    font-weight: 800;
+    margin: 1rem 0rem;
+}
+
+.personal-section2 h3 {
+    color: rgb(255, 0, 51);
+    font-weight: 500;
+    margin: 1rem 0rem;
+}
+
+ul.socials li {
+    margin: 0.3rem;
+}
+
+.personal-section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 2rem;
+}
+
+.personal-section3 p {
+    margin: 1rem 0rem;
+    width: fit-content;
+}
+
+.personal-section3 span#fee {
+    color: green;
+    font-weight: bolder;
+}
+
+span#rating {
+    color: blue;
+    font-weight: bolder;
+    margin-left: 0.5rem;
+}
+
+.personal-section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8rem;
+    z-index: 10;
+}
+
+.personal-section4 a {
+    text-decoration: none;
+    z-index: 9;
+}
+
+.personal-section4 a.edit {
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    transition: 0.8s ease-in-out;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    margin: 0.8rem 1rem;
+    position: relative;
+    background: transparent;
+    border: 0.06rem solid blue;
+    font-size: 0.8rem;
+    width: fit-content;
+}
+
+.slide-blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, blue 70%, black);
+    height: 100%;
+    width: 0;
+    transition: 0.8s ease-in-out;
+    z-index: -1;
+}
+
+a.edit:hover {
+    color: white;
+}
+
+a.edit:hover .slide-blue {
+    width: 100%;
+}
+
+.personal-section4 a.contact-me {
+    color: black;
+    transition: 0.8s ease-in-out;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    margin: 0.8rem 1rem;
+    position: relative;
+    background: transparent;
+    border: 0.06rem solid green;
+    font-size: 0.8rem;
+    width: fit-content;
+}
+
+.slide-green {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: green;
+    height: 100%;
+    width: 0;
+    transition: 0.8s ease-in-out;
+    z-index: -1;
+}
+
+a.contact-me:hover {
+    color: white;
+}
+
+a.contact-me:hover .slide-green {
+    width: 100%;
+}
+
+.section-main {
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.section-left {
+    margin: 1rem 5rem;
+}
+
+.section-right {
+    margin: 1rem 5rem;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem rgb(226, 226, 226);
+    padding: 0.5rem 0.8rem;
+    margin: 1rem 0rem;
+}
+
+.about-me p {
+    margin: 0.8rem 0rem;
+    font-weight: 500;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem rgb(226, 226, 226);
+    padding: 0.5rem 0.8rem;
+    margin: 1rem 0rem;
+}
+
+.review-items {
+    margin: 0.8rem 0.5rem;
+    border-bottom: 0.1rem solid rgb(226, 226, 226);
+}
+
+.rating-and-date {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0.3rem;
+}
+
+.others {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem rgb(226, 226, 226);
+    padding: 0.5rem 0.8rem;
+    margin: 1rem 3rem;
+}
+
+.others p {
+    margin: 0.8rem 0rem;
+}
+
+.work-history {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem rgb(226, 226, 226);
+    padding: 0.5rem 0.8rem;
+    margin: 1rem 3rem;
+}
+
+.work-history p {
+    margin: 0.8rem 0rem;
+}
+
+.notifications {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem rgb(226, 226, 226);
+    padding: 0.5rem 0.8rem;
+    margin: 1rem 3rem;
+}
+
+.notifications p {
+    margin: 0.8rem 0rem;
+}

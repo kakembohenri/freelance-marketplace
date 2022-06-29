@@ -1,0 +1,119 @@
+@import url("../css/home.css");
+
+.table-actions {
+  display: flex;
+}
+
+.table-actions > form {
+  padding: 0 1rem;
+}
+
+input[value="Update"] {
+  background: rgb(83, 216, 83);
+  transition: 0.3s ease-in;
+}
+
+input[value="Update"]:hover,
+input[value="Update"]:active {
+  background: green;
+}
+
+form > input {
+  margin: 0.5rem;
+}
+
+form > input[type="url"] {
+  padding: 0.5rem;
+  width: 60%;
+}
+
+input[name="accepted"] {
+  background: rgb(83, 216, 83);
+}
+
+input[name="accepted"]:hover,
+input[name="accepted"]:active {
+  background: green;
+}
+
+small > i {
+  color: crimson;
+}
+
+p.green + a {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: rgb(83, 216, 83);
+  text-decoration: none;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+p.green + a:hover,
+p.green + a:active {
+  background: green;
+}
+
+span.failure {
+  width: 60%;
+  background: crimson;
+}
+
+span.failure > small {
+  color: white;
+  text-align: center;
+}
+
+/*  */
+.actions {
+  display: flex;
+  flex-direction: row;
+}
+input[value="Approve"] {
+  background: rgb(83, 216, 83);
+}
+
+input[value="Approve"]:hover,
+input[value="Approve"]:active {
+  background: green;
+}
+
+.success {
+  background: rgb(83, 216, 83);
+  text-align: center;
+}
+
+.success > small {
+  color: white;
+}
+
+textarea {
+  padding: 0.5rem;
+  width: 35rem;
+  height: 15rem;
+  resize: none;
+}
+
+input.rate {
+  padding: 0.5rem 0.8rem;
+  background: lightblue;
+  border: 0.1rem solid transparent;
+  transition: 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+input.rate:hover,
+input.rate:active {
+  background: lightskyblue;
+  border: 0.1rem solid blue;
+}
+
+.error {
+  background: crimson;
+  text-align: center;
+  width: 50%;
+}
+
+.error > strong {
+  color: white;
+}

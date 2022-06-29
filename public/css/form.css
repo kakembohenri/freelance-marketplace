@@ -1,0 +1,294 @@
+@import url("all.min.css");
+@import url("fontawesome.min.css");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Background image here */
+.bk-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.form-messages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 10%;
+    background: red;
+    border-radius: 1rem;
+}
+
+.form-container_row {
+    display: flex;
+    flex-direction: row;
+    width: 32rem;
+    position: relative;
+}
+
+.form-container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 2rem 0rem;
+    height: 80rem;
+    overflow: hidden;
+}
+
+.form-choice {
+    margin-top: 1rem;
+    box-shadow: 0rem 0rem 0.3rem 0.3rem rgb(248, 118, 144);
+    border-radius: 2rem;
+    max-width: 70%;
+    max-height: 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+span.slider {
+    position: absolute;
+    background: crimson;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+
+.toggle-btn {
+    width: 6rem;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.form_company-logo {
+    margin: 1rem 0rem;
+    text-align: center;
+}
+
+form {
+    margin: 1rem 2rem;
+    width: 80%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.8s ease-in-out;
+}
+
+.form-input {
+    margin: 0.2rem 0rem;
+}
+
+.form-input input {
+    padding: 0.5rem;
+    margin: 0.5rem 0rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.06rem solid crimson;
+    width: 80%;
+}
+
+.form-input input:focus {
+    outline: none;
+}
+
+.form-input_error {
+    margin: 0.3rem 0.5rem;
+}
+
+.form-input_error strong {
+    color: crimson;
+}
+
+.input-gender {
+    /* border-bottom: none;
+  margin-top: 0.5rem;
+  position: relative;
+  margin-left: 2.5rem; */
+}
+
+.form-input-gender::after {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    content: "Female";
+}
+
+input[type="file"] {
+    border: none;
+}
+
+label[for="gender"] {
+    margin-top: 1rem;
+}
+
+.form-input_gender {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.form-input_gender input {
+    width: 2rem;
+    margin: 0rem;
+}
+
+.form-input_gender input:nth-child(1) {
+    margin-right: 4rem;
+}
+textarea {
+    padding: 0.5rem;
+    margin: 1rem 0.5rem;
+    height: 5rem;
+    width: 80%;
+    resize: none;
+}
+
+button.form-submit {
+    position: relative;
+    padding: 0.5rem 1rem;
+    border: 0.06rem solid blue;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+    z-index: 9;
+}
+
+span.to-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, blue 50%, black);
+    transition: 0.8s ease-in-out;
+    z-index: -1;
+}
+
+.form-submit:hover {
+    color: white;
+}
+
+.form-submit:hover span.to-right {
+    width: 100%;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.signup-client {
+    left: 100%;
+    margin-left: 3rem;
+}
+
+.signup-freelancer {
+    margin-left: 3rem;
+}
+
+.form-login {
+    height: 25rem;
+}
+
+h3.login {
+    color: crimson;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin: 1rem 0rem;
+    font-family: sans-serif;
+}
+
+.form-create_gig {
+    margin-top: 7rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
+    height: 32rem;
+    max-height: 43rem;
+}
+
+.notification {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem;
+    background: white;
+    border-bottom-left-radius: 0.2rem;
+    border-top-left-radius: 0.2rem;
+    z-index: 10;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+.notification::before {
+    content: "";
+    position: absolute;
+    background: rgb(70, 255, 70);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0.3rem;
+    border-radius: 0.5rem;
+}
+.notification p:nth-child(1) {
+    margin: 1rem 0rem;
+    font-weight: 700;
+}
+
+@keyframes slide-left {
+    0%,
+    100% {
+        transform: translate3d(100%, 0, 0);
+    }
+
+    10%,
+    90% {
+        transform: translate3d(-2rem, 0, 0);
+    }
+}
+
+.notification {
+    transform: translate3d(100%, 0, 0);
+    animation: slide-left 5s 0.2s 1 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+label {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+}
